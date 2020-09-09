@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>管理员</title>
+    <script>
+        var baseApi = function() {
+            let host = window.location.host;
+            if (/192\.168|localhost/.test(host)) {
+                return location.origin;
+            } else {
+                return 'http://103.243.24.166:80';
+            }
+        }
+        let passwordSwitch = true;
+        let password = 'deng1234'
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
